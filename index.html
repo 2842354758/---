@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-button-next {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            left: 50%;
+            margin-left: -13.5px;
+            transform: rotate(-90deg)
+        }
+        
+        .logo {
+            background-color: #3e1012;
+            position: absolute;
+            top: 10px;
+            display: block;
+            padding: 15px;
+        }
+        
+        .bie {
+            font-size: 28px;
+            position: absolute;
+            top: 90px;
+            color: #3e1012;
+        }
+        
+        .biaoyu {
+            position: absolute;
+            top: 150px;
+        }
+        
+        .zun {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 25px;
+            color: #fff;
+        }
+        
+        .zhi {
+            font-size: 13px;
+            position: absolute;
+            top: 210px;
+            color: #3e1012;
+            font-weight: bolder;
+        }
+        
+        .fot {
+            position: absolute;
+            top: 263px;
+        }
+        
+        .da {
+            width: 374px;
+            height: 398px;
+        }
+        
+        .xiao {
+            position: absolute;
+            top: 29px;
+            left: 9px;
+            width: 355px;
+            height: 370px;
+        }
+        
+        .music #img1 {
+            position: absolute;
+            right: 3%;
+            top: 3%;
+            animation: muc 1s linear infinite;
+        }
+        
+        .music #img2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        @keyframes muc {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes auto {
+            0% {
+                transform: rotate(-50deg)
+            }
+            50% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(50deg)
+            }
+        }
+        
+        .gongsi {
+            font-size: 28px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #3e1012;
+            border-bottom: 2px #3e1012 solid;
+        }
+        
+        .jianjie {
+            display: block;
+            padding: 15px;
+            color: #fff;
+            background-color: #3e1012;
+            position: absolute;
+            top: 45px;
+            left: 10px;
+        }
+        
+        .d1 {
+            position: absolute;
+            top: 90px;
+            transform: rotateY(180deg);
+        }
+        
+        .d2 {
+            font-size: 16px;
+            position: absolute;
+            top: 178px;
+            left: 10px;
+            right: 14px;
+            color: #3e1012;
+            font-weight: bolder;
+        }
+        
+        .d3 {
+            width: 100%;
+            position: absolute;
+            top: 342px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="music" id="music"> <img src="img/music.gif" alt="" id="img2"> <img src="img/music_off.png" alt="" id="img1">
+                    <audio src='1989062586.mp3' id="mp3Btn" autoplay loop> </audio>
+                </div> <img src="img/f91ec125-45dc-43a2-9426-029b5bb66feb-0628.png" alt="" class="logo ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                <h1 class="bie ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="0.6s">花 园 别 墅</h1>
+                <div class="biaoyu"> <img src="img/f9a60f0c-2117-46da-9f06-7bb19220c20d-9322.jpg" alt="" class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.7s" swiper-animate-delay="0.8s">
+                    <p class="zun ani" swiper-animate-effect="rotateInUpLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">尊 重 房 子，就 是 尊 重 你</p>
+                </div>
+                <p class="zhi ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s">指纹入户，厨房净水、色彩可视对讲、刷卡时单元门
+                    <br> 谨献给注重生活品味和向往庄园生活的人。 </p>
+                <div class="fot"><img src="img/a9ff4e6b-667a-4ad4-8ee4-867aafca3615-8682.jpg" alt="" class="xiao ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s"> <img src="img/6152a414-fbe9-4bde-91f2-345a1b9360d3-7858.jpg" alt="" class="da ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1s"> </div>
+            </div>
+            <div class="swiper-slide">
+                <h1 class="gongsi ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.75s">Enterpeise introdutcion</h1>
+                <p class="jianjie ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.9s">公 司 简 介</p> <img src="img/1eefa5d3-c806-4bb6-ab4e-7ba35136fe20-3576.jpg" alt="" class="d1">
+                <p class="d2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s">对于房地产的概念，应该从两个方面来了解：房地产概念是一种客观存在的物质形态，同事也是一项法律权利。作为一种客观存在的物质形态，房地产是指房产和地产的总称，包括地上永久建筑物及其所衍生的权利。房产是指建筑在土地上的各种房屋，包括住宅、厂房、仓库和商业、服务、文化、教育、卫生等...</p> <img src="img/beafbca3-2ffc-4b6f-aa82-30e887233b3e-0108.jpg" alt="" class="d3 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.7s" swiper-animate-delay="0.75s"> </div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            on: {
+                init: function () {
+                    swiperAnimateCache(this); //隐藏动画元素 
+                    swiperAnimate(this); //初始化完成开始动画
+                }
+                , slideChangeTransitionEnd: function () {
+                    swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                }
+            }
+            , direction: 'vertical'
+            , pagination: {
+                el: '.swiper-pagination'
+                , clickable: true
+            , }
+            , navigation: {
+                nextEl: '.swiper-button-next'
+                , prevEl: '.swiper-button-prev'
+            , }
+        })
+        var img1 = document.getElementById("img1")
+        var music = document.getElementById("music")
+        var img2 = document.getElementById("img2")
+        var em1 = document.getElementById("mp3Btn")
+        console.log(em1)
+        var flag = 1
+        music.onclick = function () {
+            if (flag == 1) {
+                img1.style.animation = "none"
+                img2.style.display = "none"
+                em1.pause()
+                flag = 0
+            }
+            else {
+                img1.style.animation = "muc 1s linear infinite"
+                img2.style.display = "block"
+                em1.play();
+                flag = 1
+            }
+        }
+    </script>
+</body>
+
+</html>
